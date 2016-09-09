@@ -1,0 +1,6 @@
+framework module Pods_ListView_Swift {
+  umbrella header "Pods-ListView-Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}
