@@ -32,7 +32,8 @@ platform :ios do
   lane :beta do
     # match(type: "appstore") # more information: https://codesigning.guide
     increment_build_number
-    gym(scheme: "ListView-Swift",
+    gym(workspace: "ListView-Swift.xcworkspace",
+        scheme: "ListView-Swift",
         use_legacy_build_api: true) # Build your app - more options available
     crashlytics(api_token: "7d088dc0e04f2cfafcea2f4d737da87d4565377a",
                 build_secret: "6c3543cbfb5bb17edc9499cab05693de9d536c526b909b1b654a6b479beda1ed",
